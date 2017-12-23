@@ -21,7 +21,7 @@ public class MeshFader : MonoBehaviour {
 
     public IEnumerator FadeIn()
     {
-        stopCoroutine(FadeOut());
+        StopCoroutine(FadeOut());
         float alpha = 0;
         ChangeAlpha(alpha);
         while (alpha < 1)
@@ -38,7 +38,7 @@ public class MeshFader : MonoBehaviour {
 
     public IEnumerator FadeOut()
     {
-        stopCoroutine(FadeIn());
+        StopCoroutine(FadeIn());
         float alpha = 1;
         ChangeAlpha(alpha);
         while (alpha > 0)
