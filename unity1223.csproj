@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.1.0f3</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -92,7 +90,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\GameFacade.cs" />
+    <Compile Include="Assets\Scripts\Model\EnemyData.cs" />
+    <Compile Include="Assets\Scripts\Model\StageData.cs" />
     <Compile Include="Assets\Scripts\View\Behavior\EnemyBehavior.cs" />
+    <Compile Include="Assets\Scripts\View\Component\BarTextDisplay.cs" />
     <Compile Include="Assets\Scripts\View\Component\HealthComponent.cs" />
     <Compile Include="Assets\Scripts\View\Component\MeshFader.cs" />
   </ItemGroup>
